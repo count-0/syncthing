@@ -32,7 +32,7 @@ function handleConsoleCall(type) {
 }
 
 if (window.console) {
-  var methods = ["error"];
+  var methods = ["error", "warn"];
   for (var i = 0; i < methods.length; i++) {
     intercept(methods[i], handleConsoleCall);
   }
