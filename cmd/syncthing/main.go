@@ -202,7 +202,7 @@ func defaultVars() kong.Vars {
 	// default path, unless the user has manually specified "-" or
 	// something else.
 	if build.IsWindows {
-		vars["logFile"] = "default"
+		vars["logFile"] = "-"
 	} else {
 		vars["logFile"] = "-"
 	}
